@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1120">
+<title>Deroid Scrap & Service Pro — Simulasi & Panduan</title>
+<style>
+:root{color-scheme:dark;--bg:#09111f;--panel:#121e31;--panel2:#0e1829;--line:#263650;--text:#edf4ff;--muted:#9babc1;--blue:#38bdf8;--green:#10c891;--amber:#f5b942;--pink:#fb7185}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0,#102947 0,transparent 38%),var(--bg);color:var(--text);font:15px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--blue)}button{font:inherit}.shell{max-width:1240px;margin:auto;padding:22px}.hero{padding:34px 0 22px}.eyebrow{color:var(--green);font-size:.77rem;letter-spacing:.14em;font-weight:800;text-transform:uppercase}.hero h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.08;margin:.5rem 0}.hero p{max-width:760px;color:var(--muted);font-size:1.05rem}.pill{display:inline-flex;gap:8px;align-items:center;border:1px solid #255844;background:#0d2d25;color:#94f5cb;padding:6px 11px;border-radius:99px;font-size:.8rem}
+.topbar{position:sticky;top:0;z-index:5;background:#0a1424ed;border:1px solid var(--line);border-radius:16px;padding:10px;backdrop-filter:blur(14px);display:flex;gap:8px;overflow:auto}.topbar a{white-space:nowrap;text-decoration:none;border-radius:10px;padding:8px 12px;color:#c8d5e8;font-size:.88rem}.topbar a:hover,.topbar a.active{background:#12324a;color:#fff}.search{margin-left:auto;min-width:190px;background:#08111e;border:1px solid var(--line);border-radius:10px;padding:8px 11px;color:white}
+section{scroll-margin-top:85px;margin-top:28px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:14px}.section-head h2{font-size:1.55rem;margin:0}.section-head p{color:var(--muted);margin:3px 0 0}.grid{display:grid;gap:14px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.card{background:linear-gradient(145deg,#15233a,#101a2b);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 12px 28px #0002}.card h3{margin:0 0 8px;font-size:1.04rem}.card p{margin:6px 0;color:var(--muted)}.card ul,.card ol{margin:9px 0 0;padding-left:21px}.card li{margin:5px 0}.icon{font-size:1.2rem;margin-right:7px}.tag{font:600 .72rem ui-monospace,monospace;padding:4px 8px;border-radius:7px;background:#0b1422;border:1px solid var(--line);color:#bed0e8;display:inline-block;margin:3px 3px 0 0}.note{border-left:3px solid var(--amber);background:#251d0c;padding:12px 15px;border-radius:0 12px 12px 0;color:#f7ddb0;margin:14px 0}.good{border-left-color:var(--green);background:#0b241e;color:#b8f4dd}.flow{display:flex;align-items:stretch;gap:9px;overflow:auto;padding:6px 2px 12px}.step{min-width:155px;flex:1;background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:13px}.step b{display:block;color:var(--blue);margin-bottom:5px}.arrow{align-self:center;color:var(--green);font-size:1.5rem}.tree{font:13px/1.8 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre;overflow:auto;background:#08111e;border:1px solid var(--line);border-radius:14px;padding:17px;color:#cbe4ff}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:14px}table{border-collapse:collapse;width:100%;min-width:600px;background:#101a2b}th,td{text-align:left;padding:11px 13px;border-bottom:1px solid var(--line);vertical-align:top}th{color:#a9bed9;background:#0b1525;font-size:.82rem}td{color:#d7e2f1}code{color:#94e5c4;background:#08111e;border-radius:5px;padding:2px 5px}.muted{color:var(--muted)}details{background:#0d1727;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:9px 0}summary{cursor:pointer;font-weight:700}.footer{color:var(--muted);border-top:1px solid var(--line);margin-top:38px;padding:20px 0 34px;font-size:.86rem}.hide{display:none!important}.small{font-size:.86rem;color:var(--muted)}
+@media(max-width:800px){.grid.three{grid-template-columns:repeat(2,minmax(0,1fr))}.search{margin:0;min-width:150px}.topbar{flex-wrap:wrap}.section-head{align-items:start;flex-direction:column}}
+@media(max-width:560px){.shell{padding:14px}.grid.two,.grid.three{grid-template-columns:1fr}.hero{padding-top:24px}.card{padding:15px}.topbar a{font-size:.8rem;padding:7px 9px}.search{flex:1}}
+@media print{body{background:white;color:#111}.topbar{position:static;background:white;flex-wrap:wrap}.card,.step,.tree,table,details{background:white;color:#111;box-shadow:none;border-color:#aaa}.card p,.muted,.small{color:#444}.tag,code{color:#111;background:#eee}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="hero">
+<div class="eyebrow">Panduan aplikasi · panduan alur · kerangka proyek</div>
+<h1>Deroid Scrap &amp; Service Pro<br><span style="color:var(--green)">Simulasi & Panduan Fitur</span></h1>
+<p>Pratinjau aplikasi Member dan Admin, termasuk alur servis HP, nota, katalog, scanner IC, printer, dan penyimpanan data. Halaman ini dapat dibuka langsung di Chrome.</p>
+<span class="pill">● Berdasarkan struktur proyek saat ini</span>
+</header>
+<nav class="topbar" aria-label="Navigasi panduan">
+<a href="#simulasi">Simulasi</a><a href="#ringkas">Ringkasan</a><a href="#alur">Alur kerja</a><a href="#fitur">Fungsi menu</a><a href="#data">Penyimpanan</a><a href="#struktur">Struktur proyek</a><a href="#catatan">Catatan</a>
+<input class="search" id="search" type="search" placeholder="Cari bagian…" aria-label="Cari bagian">
+</nav>
+
+<section id="simulasi" data-search="simulasi demo preview aplikasi dashboard nota printer bluetooth">
+<div class="section-head"><div><h2>Simulasi aplikasi</h2><p>Pratinjau langsung antarmuka yang dipakai APK Member dan Admin.</p></div></div>
+<div class="note"><b>Mode browser:</b> pilih Member atau Admin untuk masuk langsung ke dashboard simulasi. Aksi WhatsApp, cetak, berbagi, dan Bluetooth ditampilkan sebagai simulasi; fitur native sebenarnya berjalan dari APK Android.</div>
+<div class="card" style="padding:14px;margin-bottom:12px">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+<strong>Pilih varian simulasi</strong><span id="simulationStatus" class="tag">Belum memilih mode</span>
+</div>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+<button type="button" onclick="startAppSimulation('member-login')" style="border:0;border-radius:10px;padding:10px 16px;background:#075985;color:white;font-weight:700;cursor:pointer">🔑 Simulasikan Login Member</button>
+<button type="button" onclick="startAppSimulation('member')" style="border:0;border-radius:10px;padding:10px 16px;background:#0284c7;color:white;font-weight:700;cursor:pointer">📱 Langsung ke Dashboard Member</button>
+<button type="button" onclick="startAppSimulation('admin')" style="border:0;border-radius:10px;padding:10px 16px;background:#059669;color:white;font-weight:700;cursor:pointer">🛡️ Masuk Dashboard Admin</button>
+<button type="button" onclick="startAppSimulation('service')" style="border:0;border-radius:10px;padding:10px 16px;background:#0f766e;color:white;font-weight:700;cursor:pointer">🔧 Simulasikan Servis HP</button>
+<a id="openSimulationLink" href="app/src/main/assets/scrap_engine.html" target="_blank" rel="noopener" style="align-self:center">Buka di tab baru</a>
+</div>
+</div>
+<div class="card" style="padding:8px">
+<div id="simulationPlaceholder" style="min-height:300px;display:grid;place-items:center;text-align:center;color:var(--muted);padding:24px">
+<div><div style="font-size:2.2rem">📲</div><strong>Pilih alur yang ingin dicoba</strong><p>Login awal Member akan menampilkan layar aktivasi dengan kode demo terisi. Mode langsung membuka dashboard Member atau Admin.</p></div>
+</div>
+<iframe id="appSimulationFrame" title="Simulasi dashboard Deroid Unbricker" src="about:blank" loading="lazy" style="display:none;width:100%;height:min(82vh,1000px);min-height:620px;border:1px solid var(--line);border-radius:12px;background:#0b1120"></iframe>
+<p class="small" style="padding:4px 8px">Tampilan terbaik memerlukan koneksi internet untuk memuat Tailwind CSS dan ikon. Pilih tombol Servis HP untuk membuka formulir dan riwayat demo.</p>
+</div>
+</section>
+
+<section id="ringkas" data-search="ringkasan overview dashboard peran">
+<div class="section-head"><div><h2>Ringkasan sistem</h2><p>Mulai dari aplikasi yang dibuka sampai data tersimpan.</p></div></div>
+<div class="grid three">
+<article class="card"><h3><span class="icon">📱</span>APK Member</h3><p>Dashboard kerja harian dengan lisensi, transaksi pembelian limbah, scanner/database IC, katalog harga, pengaturan toko, dan kamera microscope.</p><span class="tag">com.deroid.unbrickernota</span></article>
+<article class="card"><h3><span class="icon">🛡️</span>APK Admin</h3><p>Dashboard yang sama dengan panel admin/keygen untuk membantu membuat kode aktivasi. Tombol Keluar menutup aplikasi Admin.</p><span class="tag">com.deroid.unbrickernota.admin</span></article>
+<article class="card"><h3><span class="icon">🧩</span>Komponen Android</h3><p>Dashboard berbasis HTML di WebView. Kamera microscope dan beberapa alur nota/backup memakai komponen Android native.</p><span class="tag">WebView + Android</span></article>
+</div>
+<div class="note good"><b>Alur utama:</b> buka aplikasi → aktivasi jika diperlukan → pilih menu → isi data → pratinjau/periksa → simpan, cetak, atau bagikan.</div>
+</section>
+
+<section id="alur" data-search="alur kerja flow transaksi pembelian scrap wa nota">
+<div class="section-head"><div><h2>Alur kerja utama</h2><p>Urutan ringkas yang dapat diikuti operator.</p></div></div>
+<h3>1. Pembelian limbah dan pengiriman nota</h3>
+<div class="flow"><div class="step"><b>Isi barang</b>Nama, satuan Kg/Pcs, jumlah, dan harga.</div><span class="arrow">›</span><div class="step"><b>Tambah ke nota</b>Periksa baris barang, jumlah, subtotal, dan total.</div><span class="arrow">›</span><div class="step"><b>Isi penjual</b>Nama dan nomor WhatsApp pelanggan/penjual.</div><span class="arrow">›</span><div class="step"><b>Pratinjau</b>Cek toko, rincian, total pembayaran, dan tanggal.</div><span class="arrow">›</span><div class="step"><b>Cetak / WA</b>Cetak struk atau buka chat WA dengan teks nota terisi.</div></div>
+<h3>2. Scan dan identifikasi IC</h3>
+<div class="flow"><div class="step"><b>Pilih sumber gambar</b>Kamera live, foto microscope, atau upload foto chip.</div><span class="arrow">›</span><div class="step"><b>Pilih mode OCR</b>Offline ML Kit atau mode online yang dikonfigurasi.</div><span class="arrow">›</span><div class="step"><b>Baca marking</b>OCR membaca teks yang terlihat pada permukaan IC.</div><span class="arrow">›</span><div class="step"><b>Cocokkan database</b>Hasil OCR dicari ke part number dan alias yang tersimpan.</div><span class="arrow">›</span><div class="step"><b>Verifikasi manual</b>Pastikan marking cocok; edit/tambah data bila perlu.</div></div>
+<h3>3. Data IC dan nota beli scrap</h3>
+<div class="flow"><div class="step"><b>Pilih hasil IC</b>Gunakan data terdeteksi atau cari database.</div><span class="arrow">›</span><div class="step"><b>Periksa spesifikasi</b>Vendor, kategori, RAM/storage, BGA, protokol, harga.</div><span class="arrow">›</span><div class="step"><b>Masukkan ke nota</b>Tekan Masukkan Nota Beli Scrap untuk mengisi form barang.</div><span class="arrow">›</span><div class="step"><b>Pratinjau dan cetak</b>Periksa penjual, rincian, dan total lalu cetak atau kirim lewat WA.</div></div>
+<h3>4. Kamera microscope</h3>
+<div class="flow"><div class="step"><b>Buka kamera</b>Tekan tombol microscope pada dashboard.</div><span class="arrow">›</span><div class="step"><b>Atur perangkat</b>Hubungkan kamera/USB sesuai perangkat, beri izin bila diminta.</div><span class="arrow">›</span><div class="step"><b>Amati chip</b>Gunakan tampilan microscope untuk inspeksi marking dan kondisi fisik.</div></div>
+</section>
+
+<section id="fitur" data-search="fungsi menu katalog harga toko printer google sheets license logout">
+<div class="section-head"><div><h2>Fungsi setiap menu</h2><p>Gunakan tombol menu utama sesuai pekerjaan.</p></div></div>
+<div class="grid two">
+<article class="card"><h3>🧾 Transaksi pembelian limbah</h3><ul><li>Tambah item kiloan atau satuan.</li><li>Hitung subtotal, total Kg/Pcs, dan total pembayaran.</li><li>Ubah/hapus item pada keranjang dan kosongkan transaksi.</li><li>Lihat struk, cetak, atau bagikan teks nota ke WhatsApp.</li></ul></article>
+<article class="card"><h3>🔬 Scanner & database IC</h3><ul><li>Scan dari kamera, upload foto, atau pilih contoh.</li><li>Lihat kandidat hasil OCR dan cari berdasarkan part number.</li><li>Tambah, edit, atau hapus data IC; simpan alias OCR.</li><li>Hubungkan IC ke nota beli scrap.</li></ul></article>
+<article class="card"><h3>🔧 Servis HP</h3><ul><li>Form penerimaan unit, data pelanggan, WhatsApp, model, IMEI opsional, kondisi, dan keluhan.</li><li>Nomor servis otomatis, teknisi, status, persetujuan biaya, catatan, jasa, spare part, uang muka, sisa tagihan, dan garansi.</li><li>Riwayat bisa dicari; nota demo dapat dibuka ke WhatsApp, dibuat sebagai gambar, atau dicetak.</li><li>Data prototipe servis tersimpan lokal di browser/perangkat.</li></ul></article>
+<article class="card"><h3>🏷️ Katalog harga patokan limbah</h3><ul><li>Lihat referensi harga barang yang dibeli.</li><li>Tambah item baru dan perbaiki nama, satuan, atau harga.</li><li>Pilih item katalog untuk mengisi transaksi.</li></ul></article>
+<article class="card"><h3>⚙️ Pengaturan toko & printer</h3><ul><li>Atur nama toko, alamat, nomor telepon, dan footer struk.</li><li>Pilih target printer sesuai opsi yang tersedia.</li><li>Konfigurasi link Google Sheet dan URL Apps Script Web App.</li><li>Lihat/salin template <code>Code.gs</code> untuk Apps Script.</li></ul></article>
+<article class="card"><h3>🔑 API key OCR</h3><ul><li>Pilih mode OCR yang tersedia.</li><li>API key online disimpan otomatis pada perangkat setelah input berhenti sesaat.</li><li>Periksa indikator status key sebelum melakukan scan online.</li></ul></article>
+<article class="card"><h3>🎨 Tema, lisensi, dan keluar</h3><ul><li>Pilih tema tampilan dari tombol tema.</li><li>Lihat status lisensi dan identitas perangkat.</li><li>APK Member: Keluar mereset sesi lisensi dan kembali ke layar aktivasi; data transaksi tetap tersimpan.</li><li>APK Admin tidak memakai login member; Keluar menutup aplikasi.</li></ul></article>
+</div>
+<details><summary>Nota pembelian dari penjual</summary><p>Satu-satunya jenis nota di aplikasi. Setiap nota punya nomor otomatis (#SCRAP-YYMMDD-001), draft tersimpan otomatis, riwayat tersimpan di perangkat (menu Riwayat Nota), dan dicatat satu baris per nota ke Google Sheets bila Apps Script sudah diatur.</p></details>
+</section>
+
+<section id="data" data-search="penyimpanan data localstorage sharedpreferences file backup google sheets">
+<div class="section-head"><div><h2>Data disimpan di mana?</h2><p>Data lokal tetap di perangkat; berkas backup disimpan di lokasi yang dipilih pengguna.</p></div></div>
+<div class="table-wrap"><table><thead><tr><th>Data</th><th>Penyimpanan utama</th><th>Catatan</th></tr></thead><tbody>
+<tr><td>Pengaturan toko, katalog scrap, database IC, API key OCR</td><td>Penyimpanan privat aplikasi / WebView + Android Preferences</td><td>Terikat pada instalasi aplikasi dan profil APK. Menghapus data aplikasi dapat menghapus data lokal.</td></tr>
+<tr><td>Nota pembelian &amp; riwayat nota</td><td>LocalStorage WebView di perangkat</td><td>Hingga 200 nota terakhir. Salinan ke Google Sheets bila dikonfigurasi.</td></tr>
+<tr><td>Backup dan restore</td><td>Berkas pilihan pengguna melalui pemilih file Android</td><td>Backup tidak bergantung pada PDF.</td></tr>
+<tr><td>Google Sheets</td><td>Google Sheet milik pengguna melalui Apps Script</td><td>Perlu URL Sheet dan Web App Apps Script yang telah di-deploy. Template Code.gs tersedia di aplikasi.</td></tr>
+</tbody></table></div>
+<div class="note"><b>Catatan sinkronisasi:</b> konfigurasi Sheet dan template Apps Script tersedia di menu pengaturan. Pastikan Apps Script sudah di-deploy dan URL Web App sudah dimasukkan untuk menggunakan koneksi tersebut.</div>
+</section>
+
+<section id="struktur" data-search="struktur folder berkas project architecture html java json csv gradle apk">
+<div class="section-head"><div><h2>Kerangka susunan proyek</h2><p>Gambaran berkas penting, bukan seluruh berkas library/build.</p></div></div>
+<div class="tree">deroid-unbricker-nota/
+├── index.html                         ← Panduan alur kerja (file ini)
+├── app/
+│   ├── build.gradle                   ← Flavor Member dan Admin, konfigurasi build
+│   └── src/main/
+│       ├── AndroidManifest.xml        ← Activity, izin, launcher, FileProvider
+│       ├── java/com/deroid/unbrickernota/
+│       │   ├── DashboardActivity.java ← WebView, Android bridge, OCR, WA, file picker
+│       │   ├── MainActivity.java      ← Fitur kamera microscope / teknisi
+│       │   └── HomeActivity.java      ← Layar pilihan fitur native
+│       └── assets/
+│           ├── scrap_engine.html      ← Dashboard, transaksi, scanner, katalog, UI
+│           ├── ic_image_database.json ← Seed database IC dari tabel pengguna
+│           ├── emmc_database.csv      ← Seed database eMMC
+│           └── Code.gs                ← Template integrasi Google Apps Script
+└── app/build/outputs/apk/
+    ├── member/debug/app-member-debug.apk
+    └── admin/debug/app-admin-debug.apk</div>
+<div class="grid two" style="margin-top:14px">
+<article class="card"><h3>Alur teknis halaman dashboard</h3><p><code>DashboardActivity</code> membuka halaman aset <code>scrap_engine.html</code> ke WebView dan menyediakan <code>AndroidBridge</code> untuk fitur Android seperti kamera, kontak, API key, WhatsApp, dan pemilih berkas.</p></article>
+<article class="card"><h3>Alur teknis scanner</h3><p>Foto/gambar → OCR Android atau layanan online sesuai mode → teks marking → pencocokan dengan database IC → kandidat dan detail → verifikasi pengguna.</p></article>
+</div>
+</section>
+
+<section id="catatan" data-search="catatan batasan ocr verifikasi kode">
+<div class="section-head"><div><h2>Catatan penggunaan</h2><p>Hal penting agar data tetap akurat dan aman.</p></div></div>
+<div class="grid two">
+<article class="card"><h3>Hasil OCR perlu diperiksa</h3><p>OCR dapat keliru membaca karakter mirip seperti <code>0/O</code>, <code>1/I</code>, dan <code>5/S</code>. Pastikan marking fisik sesuai sebelum mengubah database atau nota.</p></article>
+<article class="card"><h3>Spesifikasi kosong berarti belum diverifikasi</h3><p>Data kode dari tabel tidak otomatis menjamin RAM, BGA, atau protokol. Isi spesifikasi setelah mencocokkan dengan sumber teknis yang tepercaya.</p></article>
+</div>
+</section>
+<footer class="footer">Panduan lokal Deroid Unbricker · Simpan file ini di proyek dan buka <code>index.html</code> dengan Google Chrome. Gunakan Ctrl+P bila ingin mencetak panduan.</footer>
+</div>
+<script>
+function startAppSimulation(role){
+ const frame=document.getElementById('appSimulationFrame');
+ const path='app/src/main/assets/scrap_engine.html?simulate='+encodeURIComponent(role);
+ frame.src=path;
+ frame.style.display='block';
+ document.getElementById('simulationPlaceholder').style.display='none';
+ const labels={'member-login':'Mode Member — login awal (kode demo terisi)','member':'Mode Member — dashboard aktif','admin':'Mode Admin — dashboard + keygen','service':'Simulasi Member — menu Servis HP'};
+ document.getElementById('simulationStatus').textContent=labels[role]||'Mode simulasi';
+ document.getElementById('openSimulationLink').href=path;
+}
+const search=document.getElementById('search');
+search.addEventListener('input',()=>{const q=search.value.trim().toLocaleLowerCase('id');document.querySelectorAll('section[data-search]').forEach(s=>{s.classList.toggle('hide',!!q&&!((s.dataset.search+' '+s.innerText).toLocaleLowerCase('id').includes(q)));});});
+const links=[...document.querySelectorAll('.topbar a')];const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('active',a.hash==='#'+e.target.id));}),{rootMargin:'-20% 0px -70% 0px'});document.querySelectorAll('section[id]').forEach(s=>observer.observe(s));
+</script>
+</body>
+</html>
